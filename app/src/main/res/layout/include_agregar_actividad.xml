@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenActividad"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/titulo" />
+
+        <EditText
+                android:id="@+id/editTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imagenActividad"
+                android:textSize="16dp"
+                android:hint="Título" />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/relativeTipoActividad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenTipoActividad"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/actividad" />
+
+        <EditText
+                android:id="@+id/editTipoActividad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="44dp"
+                android:textSize="16dp"
+                android:editable="false"
+                android:layout_toEndOf="@+id/imagenTipoActividad"
+                android:hint="Tipo de Actividad" />
+
+        <LinearLayout
+                android:id="@+id/layoutFlecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp">
+
+            <ImageView
+                    android:id="@+id/imagenFlecha"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:visibility="invisible"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenOportunidad"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/oportunidad" />
+
+        <EditText
+                android:id="@+id/editOportunidades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imagenOportunidad"
+                android:hint="Oportunidad"
+                android:editable="false"
+                android:textSize="16dp"/>
+
+        <LinearLayout
+                android:id="@+id/layoutOportunidades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/relativeTipoVisita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenTipoVisita"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/tipo_visita" />
+
+        <EditText
+                android:id="@+id/editTipoVisita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="44dp"
+                android:layout_toEndOf="@+id/imagenTipoVisita"
+                android:hint="Tipo de Visita"
+                android:editable="false"
+                android:textSize="16dp"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:visibility="invisible"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Datos"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="56dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prospecto"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground">
+
+        <Switch
+                android:id="@+id/switchProspecto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Prospecto"
+                android:textSize="16dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenCliente"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/clientes" />
+
+        <EditText
+                android:id="@+id/editClienteProspecto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imagenCliente"
+                android:editable="false"
+                android:hint="Cliente/Prospecto"
+                android:textSize="16dp"/>
+
+        <LinearLayout
+                android:id="@+id/layoutClienteProspecto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenContacto"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/contactos" />
+
+        <EditText
+                android:id="@+id/editContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imagenContacto"
+                android:hint="Contacto"
+                android:editable="false"
+                android:textSize="16dp"/>
+
+        <LinearLayout
+                android:id="@+id/layoutContacto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/relativeCalendario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenFechaInicio"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/fecha" />
+
+        <EditText
+                android:id="@+id/editFechaInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginLeft="20dp"
+                android:editable="false"
+                android:layout_toEndOf="@+id/imagenFechaInicio"
+                android:hint="Fecha de Inicio"
+                android:textSize="16dp"/>
+
+        <LinearLayout
+                android:id="@+id/layoutFechaInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/relativeHoraInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenHoraInicio"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/fecha"
+                android:visibility="invisible"/>
+
+        <EditText
+                android:id="@+id/editHoraInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginLeft="20dp"
+                android:editable="false"
+                android:layout_toEndOf="@+id/imagenHoraInicio"
+                android:hint="Hora de Inicio"
+                android:textSize="16dp"/>
+
+        <LinearLayout
+                android:id="@+id/layoutHoraInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="#E4E6E3" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenRazonVisita"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/razon_visita" />
+
+        <EditText
+                android:id="@+id/editRazonVisita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginLeft="20dp"
+                android:editable="false"
+                android:layout_toEndOf="@+id/imagenRazonVisita"
+                android:hint="Razón de Visita"
+                android:textSize="16dp"/>
+
+        <LinearLayout
+                android:id="@+id/layoutRazonVisita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/relativeEstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenEstatus"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/estatus" />
+
+        <EditText
+                android:id="@+id/editEstaus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imagenEstatus"
+                android:hint="Estatus"
+                android:editable="false"
+                android:textSize="16dp"/>
+
+        <LinearLayout
+                android:id="@+id/layoutEstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+            android:id="@+id/fragmentFechaFin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenComentario"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/comentario" />
+
+        <EditText
+                android:id="@+id/editComentario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imagenComentario"
+                android:hint="Comentario"
+                android:textSize="16dp"/>
+
+        <LinearLayout
+                android:id="@+id/layoutComentario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
