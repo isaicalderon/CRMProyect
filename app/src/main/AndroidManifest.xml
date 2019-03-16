@@ -9,6 +9,14 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".VerRazonVisita">
+        </activity>
+        <activity android:name=".VerProspectos">
+        </activity>
+        <activity android:name=".VerOportunidades">
+        </activity>
+        <activity android:name=".VerContactos">
+        </activity>
         <activity android:name=".VerClientes">
         </activity>
         <activity android:name=".AgregarActividad">

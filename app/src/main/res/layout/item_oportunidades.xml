@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_oportunidades_layout"
+        android:background="?attr/selectableItemBackground">
+    <TextView
+            android:id="@+id/nombreOportunidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="16sp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="La Huerta Industria Mineria" />
+    <TextView
+            android:id="@+id/desOportunidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nombreOportunidad"
+            android:layout_below="@+id/nombreOportunidad"
+            android:layout_toLeftOf="@id/codOportunidad"
+            android:layout_toStartOf="@id/codOportunidad"
+            android:layout_marginBottom="16sp"
+            android:textSize="16dp"
+            android:text="OP-00-071401"
+            android:textColor="@color/colorGris"/>
+    <TextView
+            android:id="@+id/codOportunidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/nombreOportunidad"
+            android:layout_marginRight="16sp"
+            android:layout_marginBottom="16sp"
+            android:text="345BL1"
+            android:textColor="@color/colorGrisClaro"
+            android:textSize="16dp" />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+</RelativeLayout>

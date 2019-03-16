@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".VerOportunidades">
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarOportunidades"
+                app:title="Oportunidades"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/AppTheme.PopupOverlay" />
+        <br.com.mauker.materialsearchview.MaterialSearchView
+                android:id="@+id/search_view_oportunidades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MaterialSearchViewStyle"/>
+    </FrameLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewOportunidades"
+            android:layout_width="match_parent"
+            android:focusedByDefault="true"
+            android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

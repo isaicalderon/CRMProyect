@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_prospectos_layout"
+        android:background="?attr/selectableItemBackground">
+    <TextView
+            android:id="@+id/nombreProspecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:layout_marginLeft="16sp"
+            android:textSize="18dp"
+            android:text="Casa Ley S.A. de C.V."
+            android:textStyle="bold"/>
+    <TextView
+            android:id="@+id/industriaCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17sp"
+            android:layout_below="@id/nombreProspecto"
+            android:layout_alignStart="@id/nombreProspecto"
+            android:textSize="16dp"
+            android:text="AC-Agricultura"
+            android:layout_toLeftOf="@id/rfcProspecto"
+            android:layout_toStartOf="@id/rfcProspecto"
+            android:textColor="@color/colorGris"/>
+    <TextView
+            android:id="@+id/rfcProspecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/industriaCat"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:text="878989808"
+            android:textColor="@color/colorGris"
+            android:textSize="16dp" />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+</RelativeLayout>

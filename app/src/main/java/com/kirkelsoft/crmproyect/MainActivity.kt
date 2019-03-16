@@ -27,8 +27,42 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        fab.setOnClickListener {
+            val intent = Intent(this, AgregarActividad::class.java)
+            this.startActivity(intent)
+        }
 
         val actividades = ArrayList<Actividad>()
+        val titulo = intent.getStringExtra("tituloAct")
+        val clienteProspecto = intent.getStringExtra("clienteProspectoAct")
+        val estatus = intent.getStringExtra("estatusAct")
+        val fechaInicio = intent.getStringExtra("fechaInicioAct")
+        val tipoActividad = intent.getStringExtra("tipoActividadAct")
+        val tipoVisita = intent.getStringExtra("tipoVisitaAct")
+        val razonVisita = intent.getStringExtra("razonVisitaAct")
+        val oportunidad = intent.getStringExtra("oportunidadAct")
+        val contacto = intent.getStringExtra("contacto")
+        val comentario = intent.getStringExtra("comentario")
+        val horaInicio = intent.getStringExtra("horaInicioAct")
+        val fechaFin = intent.getStringExtra("fechaFinAct")
+        val horaFin = intent.getStringExtra("horaFinAct")
+        var image : Int = 0
+
+        if (titulo != null) {
+            when (tipoActividad) {
+                "Tarea" -> image = R.drawable.tarea
+                "Visita" -> {
+                    when (tipoVisita) {
+                        "Llamada telefónica" -> image = R.drawable.llamada
+                        "Correo electrónico" -> image = R.drawable.correo
+                        "Personal" -> image = R.drawable.personal
+                    }
+                }
+            }
+
+            actividades.add(Actividad(titulo, image, clienteProspecto, estatus, fechaInicio, horaInicio, tipoActividad, tipoVisita, razonVisita, oportunidad, contacto, comentario, fechaFin, horaFin))
+        }
+
         actividades.add(
             Actividad(
                 "Tarea opo 1816",
@@ -93,6 +127,8 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recycleView)
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
         recyclerView.adapter = adapter
+
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {

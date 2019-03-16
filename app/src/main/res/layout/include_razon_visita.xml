@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Razón de Visita"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/actividadCuentaCorriente"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtActividadCuentaCorriente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Actividades de cuenta corriente"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/censoMaquinaria"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtCensoMaquinaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Censo de maquinaria"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cierreVenta"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtCierreVenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cierre de venta"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/entregarMaquinaria"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtEntregarMaquinaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Entregar maquinaria"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/entrevistaNecesidades"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtEntrevistaNecesidades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Entrevista para descubrir necesidades"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inspeccionMaquinaria"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtInspeccionMaquinaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inspección de maquinaria"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/presentacionCotizacion"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtPresentacionCotizacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Presentación de cotización"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/presentacionInspeccion"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtPresentacionInspeccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Presentación de resultados de inspección"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seguimientoCotizaciones"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtSeguimientoCotizaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Seguimiento de cotizaciones"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seguimientoRenta"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtSeguimientoRenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Seguimiento de renta"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tramiteFinanciamiento"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtTramiteFinanciamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Trámite de financiamiento"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/visitaCliente"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtVisitaCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Visita a cliente nuevo"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/visitaRelacion"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtVisitaRelacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Visita de relación"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E4E6E3" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/otros"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+
+        <TextView
+                android:id="@+id/txtOtros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Otros"
+                android:textSize="16dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

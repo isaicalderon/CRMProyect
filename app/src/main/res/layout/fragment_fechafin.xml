@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenFechaFin"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/fecha" />
+
+        <EditText
+                android:id="@+id/editFechaFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginLeft="20dp"
+                android:editable="false"
+                android:layout_toEndOf="@+id/imagenFechaFin"
+                android:hint="Fecha de Fin"
+                android:textSize="16sp"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp">
+
+        <ImageView
+                android:id="@+id/imagenHoraFin"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/fecha"
+                android:visibility="invisible"/>
+
+        <EditText
+                android:id="@+id/editHoraFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginLeft="20dp"
+                android:editable="false"
+                android:layout_toEndOf="@+id/imagenHoraFin"
+                android:hint="Hora de Fin"
+                android:textSize="16dp"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp">
+
+            <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:src="@drawable/flecha" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

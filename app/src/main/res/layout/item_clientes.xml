@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_clientes_layout"
+    android:background="?attr/selectableItemBackground">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagenCliente"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16sp"
+        android:layout_gravity="center"
+        android:src="@drawable/cliente"/>
+    <TextView
+        android:id="@+id/nombreCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imagenCliente"
+        android:text="Cliente/Prospecto"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E4E6E3" />
+</RelativeLayout>
